@@ -1,0 +1,17 @@
+.align { padding: clamp(56px, 8vw, 96px) 0 0; }
+.align__wrap { max-width: var(--max, 1120px); margin: 0 auto; padding: 0 var(--gut, 20px); }
+.align__stage { margin-top: 28px; background: var(--c-surface); border: 1px solid var(--hair); border-radius: var(--r, 18px); padding: clamp(10px, 2vw, 22px); }
+.align__stage svg { display: block; width: 100%; height: auto; overflow: visible; }
+.align__floor { stroke: var(--c-ink-soft); stroke-width: 2; opacity: .5; }
+.align__pit { fill: color-mix(in srgb, var(--c-ink) 10%, transparent); stroke: var(--c-accent); stroke-width: 2.4; stroke-dasharray: 9 7; }
+.align__mark { stroke: var(--c-accent); stroke-width: 3; fill: none; stroke-linecap: square; }
+.align__axis { stroke: var(--c-ink-soft); stroke-width: 1.4; stroke-dasharray: 3 6; opacity: .7; transition: stroke .3s, opacity .3s; }
+.align.is-set .align__axis { stroke: var(--c-accent); opacity: 1; }
+.align__rope { stroke: var(--c-ink); stroke-width: 2.2; fill: none; }
+.align__body { fill: color-mix(in srgb, var(--c-ink) 22%, var(--c-surface)); stroke: var(--c-ink); stroke-width: 2.4; }
+.align__panel { fill: var(--c-accent); }
+.align__win { fill: color-mix(in srgb, var(--c-ink) 45%, var(--c-surface)); }
+.align__tag { font: 700 17px var(--f-text); fill: var(--c-accent); opacity: 0; transition: opacity .35s; }
+.align.is-set .align__tag { opacity: 1; }
+.align__cap { margin-top: 14px; font-size: .9rem; color: var(--c-ink-soft); }
+@media (max-width: 640px) { .align__tag { font-size: 26px; } }
